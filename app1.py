@@ -10,8 +10,8 @@ import google.generativeai as genai
 # -----------------------------
 # GEMINI CONFIG
 # -----------------------------
-genai.configure(api_key=st.secrets("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-2.5-flash")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+model = genai.GenerativeModel(model_name="gemini-2.5-flash")
 
 
 # -----------------------------
